@@ -1,4 +1,4 @@
-class ListNode:
+class ListN:
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -6,7 +6,7 @@ class ListNode:
 class MyLinkedList:
     def __init__(self):
         self.length = 0
-        self.dummy = ListNode(0)
+        self.dummy = ListN(0)
 
     def get(self, index: int) -> int:
         if index < 0 or index >= self.length:
@@ -17,7 +17,7 @@ class MyLinkedList:
         return curr.val
 
     def addAtHead(self, val: int) -> None:
-        new_node = ListNode(val)
+        new_node = ListN(val)
         new_node.next = self.dummy.next
         self.dummy.next = new_node
         self.length += 1
@@ -26,7 +26,7 @@ class MyLinkedList:
         curr = self.dummy
         while curr.next:
             curr = curr.next
-        curr.next = ListNode(val)
+        curr.next = ListN(val)
         self.length += 1
 
     def addAtIndex(self, index: int, val: int) -> None:
@@ -35,7 +35,7 @@ class MyLinkedList:
         curr = self.dummy
         for _ in range(index):
             curr = curr.next
-        new_node = ListNode(val)
+        new_node = ListN(val)
         new_node.next = curr.next
         curr.next = new_node
         self.length += 1
