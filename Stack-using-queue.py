@@ -1,6 +1,6 @@
 import collections
 
-class MyStack:
+class Stack:
     def __init__(self):
         self.q = collections.deque()
 

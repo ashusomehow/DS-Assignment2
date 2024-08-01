@@ -1,4 +1,4 @@
-class MyQueue:
+class Queue:
   def __init__(self):
     self.input = []
     self.output = []
@@ -21,8 +21,8 @@ class MyQueue:
         
 
 
-# Your MyQueue object will be instantiated and called as such:
-# obj = MyQueue()
+# Your Queue object will be instantiated and called as such:
+# obj = Queue()
 # obj.push(x)
 # param_2 = obj.pop()
 # param_3 = obj.peek()
